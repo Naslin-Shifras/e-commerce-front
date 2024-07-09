@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- my css-->
+    <link rel="stylesheet" href="ecmrs.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--fonts awsome icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--nav bar-->
+    <nav class="navbar">
+        <h1>Scalix</h1>
+        <div class="navbar-links">
+            <p class="nav-link"><a href="ecmrs.html">Home</a></p>
+            <p class="nav-link"><a href="cllection.html">Collections</a></p>
+            <p class="nav-link"><a href="contect.html">Contects</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+
+        </div>
+    </nav>
+
+    <!--side-nav bar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()"><i class="fa-solid fa-xmark"></i></p>
+        <div class="side-navbar-links">
+            <p class="side-nav-link"><a href="ecmrs.html">Home</a></p>
+            <p class="side-nav-link"><a href="newarrival.html">New Arrival</a></p>
+            <p class="side-nav-link"><a href="mostwanted.html">Most Wanted</a></p>
+            <p class="side-nav-link"><a href="cllection.html">Collections</a></p>
+            <p class="side-nav-link"><a href="contect.html">Contects</a></p>
+        </div>
+    </div>
+
+    <!--product-->
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="product">
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?white shirt" alt="Fashion Image" width="200"height="200">
+                <p>white shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?black shirt" alt="Fashion Image" width="200"height="200">
+                <p>black shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?womens top" alt="Fashion Image" width="200"height="200">
+                <p>girls clothing</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?denim" alt="Fashion Image" width="200" height="200">
+                <p>denim</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shirt" alt="Fashion Image" width="200" height="200">
+                <p>shirts</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?boots" alt="Fashion Image" width="200"
+                    height="200">
+                <p>boots</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?belt" alt="Fashion Image" width="200"
+                    height="200">
+                <p>belt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hat" alt="Fashion Image" width="200" height="200">
+                <p>hat</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?Blazer" alt="Fashion Image" width="200"
+                    height="200">
+                <p>Blazer</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?Jeans" alt="Fashion Image" width="200"
+                    height="200">
+                <p>Jeans</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?Cardigan" alt="Fashion Image" width="200"
+                    height="200">
+                <p>Cardigan</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?Cocktail dress" alt="Fashion Image" width="200"
+                    height="200">
+                <p>Cocktail dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?Maxi dresses" alt="Fashion Image" width="200"
+                    height="200">
+                <p>Maxi dresses</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?A-line Dress" alt="Fashion Image" width="200"
+                    height="200">
+                <p>
+                    A-line Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?kids Dress" alt="Fashion Image" width="200"
+                    height="200">
+                <p>kids Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bags" alt="Fashion Image" width="200"
+                    height="200">
+                <p>bags</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?slipper" alt="Fashion Image" width="200"
+                    height="200">
+                <p>slipper</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?wedding dress" alt="Fashion Image" width="200" height="200">
+                <p>wedding dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?Mermaid" alt="Fashion Image" width="200" height="200">
+                <p>Mermaid</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?linen" alt="Fashion Image" width="200" height="200">
+                <p>linen</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?underwear" alt="Fashion Image" width="200" height="200">
+                <p>underwear</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?silk" alt="Fashion Image" width="200" height="200">
+                <p>silk</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sundress" alt="Sundress Fashion Image">
+                <p>sundress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?maxi-dress" alt="Maxi Dress Fashion Image">
+                <p>maxi dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cocktail-dress" alt="Cocktail Dress Fashion Image">
+                <p>cocktail dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?evening-gown" alt="Evening Gown Fashion Image">
+                <p>evening gown</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?tunic-dress" alt="Tunic Dress Fashion Image">
+                <p>tunic dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shift-dress" alt="Shift Dress Fashion Image">
+                <p>shift dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sheath-dress" alt="Sheath Dress Fashion Image">
+                <p>sheath dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?peplum-dress" alt="Peplum Dress Fashion Image">
+                <p>peplum dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shirt-dress" alt="Shirt Dress Fashion Image">
+                <p>shirt dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?wrap-dress" alt="Wrap Dress Fashion Image">
+                <p>wrap dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bodycon-dress" alt="Bodycon Dress Fashion Image">
+                <p>bodycon dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?midi-dress" alt="Midi Dress Fashion Image">
+                <p>midi dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?peplum-dress" alt="Peplum Dress">
+                <p>Peplum Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shirt-dress" alt="Shirt Dress">
+                <p>Shirt Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?wrap-dress" alt="Wrap Dress">
+                <p>Wrap Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bodycon-dress" alt="Bodycon Dress">
+                <p>Bodycon Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?midi-dress" alt="Midi Dress">
+                <p>Midi Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?kids-dress" alt="Kids Dress">
+                <p>Kids Dress</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?men-suit" alt="Men's Suit">
+                <p>Men's Suit</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?t-shirt" alt="T-Shirt">
+                <p>T-Shirt</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?jeans" alt="Jeans">
+                <p>Jeans</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?jacket" alt="Jacket">
+                <p>Jacket</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shorts" alt="Shorts">
+                <p>Shorts</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bag" alt="Bag">
+                <p>Bag</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?watch" alt="Watch">
+                <p>Watch</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?shoes" alt="Shoes">
+                <p>Shoes</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?boots" alt="Boots">
+                <p>Boots</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sandals" alt="Sandals">
+                <p>Sandals</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sneakers" alt="Sneakers">
+                <p>Sneakers</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hat" alt="Hat">
+                <p>Hat</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?scarf" alt="Scarf">
+                <p>Scarf</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?gloves" alt="Gloves">
+                <p>Gloves</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?belt" alt="Bra">
+                <p>Bra</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?socks" alt="Socks">
+                <p>Socks</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blazer" alt="Blazer">
+                <p>Blazer</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cardigan" alt="Cardigan">
+                <p>Cardigan</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?pajamas" alt="Pajamas">
+                <p>Pajamas</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?robe" alt="Robe">
+                <p>Robe</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?leggings" alt="Leggings">
+                <p>Leggings</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?swimwear" alt="Swimwear">
+                <p>Swimwear</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cap" alt="Cap">
+                <p>Cap</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blouse" alt="Blouse">
+                <p>Blouse</p>
+            </div>
+
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hoodie" alt="Hoodie">
+                <p>Hoodie</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?tracksuit" alt="Tracksuit">
+                <p>Tracksuit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?raincoat" alt="Raincoat">
+                <p>Raincoat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sportswear" alt="Sportswear">
+                <p>Sportswear</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?formal-shoes" alt="Formal Shoes">
+                <p>Formal Shoes</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?casual-shoes" alt="Casual Shoes">
+                <p>Casual Shoes</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?slippers" alt="Slippers">
+                <p>Slippers</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?trench-coat" alt="Trench Coat">
+                <p>Trench Coat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?ankle-boots" alt="Ankle Boots">
+                <p>Ankle Boots</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?parka" alt="Parka">
+                <p>Parka</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?pullover" alt="Pullover">
+                <p>Pullover</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blazer-men" alt="Men's Blazer">
+                <p>Men's Blazer</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cardigan-men" alt="Men's Cardigan">
+                <p>Men's Cardigan</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?windbreaker" alt="Windbreaker">
+                <p>Windbreaker</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?tank-top" alt="Tank Top">
+                <p>Tank Top</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?turtleneck" alt="Turtleneck">
+                <p>Turtleneck</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bomber-jacket" alt="Bomber Jacket">
+                <p>Bomber Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?puffer-jacket" alt="Puffer Jacket">
+                <p>Puffer Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?waistcoat" alt="Waistcoat">
+                <p>Waistcoat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?poncho" alt="Poncho">
+                <p>Poncho</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blouse-women" alt="Women's Blouse">
+                <p>Women's Blouse</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?denim-jacket" alt="Denim Jacket">
+                <p>Denim Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?leather-jacket" alt="Leather Jacket">
+                <p>Leather Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?dungarees" alt="Dungarees">
+                <p>Dungarees</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?workwear" alt="Workwear">
+                <p>Workwear</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?snow-boots" alt="Snow Boots">
+                <p>Snow Boots</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?boardshorts" alt="Boardshorts">
+                <p>Boardshorts</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?loafers" alt="Loafers">
+                <p>Loafers</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?blouse-kids" alt="Kids Blouse">
+                <p>Kids Blouse</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?jumpsuit" alt="Jumpsuit">
+                <p>Jumpsuit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?romper" alt="Romper">
+                <p>Romper</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?culottes" alt="Culottes">
+                <p>Culottes</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?skort" alt="Skort">
+                <p>Skort</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?overcoat" alt="Overcoat">
+                <p>Overcoat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cloak" alt="Cloak">
+                <p>Cloak</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?tights" alt="Tights">
+                <p>Tights</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sports-bra" alt="Sports Bra">
+                <p>Sports Bra</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bralette" alt="Bralette">
+                <p>Bralette</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?teddy-coat" alt="Teddy Coat">
+                <p>Teddy Coat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?rain-boots" alt="Rain Boots">
+                <p>Rain Boots</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?beanie" alt="Beanie">
+                <p>Beanie</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bucket-hat" alt="Bucket Hat">
+                <p>Bucket Hat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?newsboy-cap" alt="Newsboy Cap">
+                <p>Newsboy Cap</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?fedora" alt="Fedora">
+                <p>Fedora</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?panama-hat" alt="Panama Hat">
+                <p>Panama Hat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?trilby" alt="Trilby">
+                <p>Trilby</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cowboy-hat" alt="Cowboy Hat">
+                <p>Cowboy Hat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?mittens" alt="Mittens">
+                <p>Mittens</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?earmuffs" alt="Earmuffs">
+                <p>Earmuffs</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?leg-warmers" alt="Leg Warmers">
+                <p>Leg Warmers</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hairband" alt="Hairband">
+                <p>Hairband</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?sunglasses" alt="Sunglasses">
+                <p>Sunglasses</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bow-tie" alt="Bow Tie">
+                <p>Bow Tie</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?necktie" alt="Necktie">
+                <p>Necktie</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?pocket-square" alt="Pocket Square">
+                <p>Pocket Square</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?abaya" alt="abaya">
+                <p>abaya</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?suspenders" alt="Suspenders">
+                <p>Suspenders</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?dress-shirt" alt="Dress Shirt">
+                <p>Dress Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?business-suit" alt="Business Suit">
+                <p>Business Suit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?trench-coat-men" alt="Men's Trench Coat">
+                <p>Men's Trench Coat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?waistcoat-men" alt="Men's Waistcoat">
+                <p>Men's Waistcoat</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?tuxedo" alt="Tuxedo">
+                <p>Tuxedo</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bridesmaid-dress" alt="Bridesmaid Dress">
+                <p>Bridesmaid Dress</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?flower-girl-dress" alt="Flower Girl Dress">
+                <p>Flower Girl Dress</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?groom-suit" alt="Groom Suit">
+                <p>Groom Suit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?pageboy-suit" alt="Pageboy Suit">
+                <p>Pageboy Suit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?ankle-socks" alt="Ankle Socks">
+                <p>Ankle Socks</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?crew-socks" alt="Crew Socks">
+                <p>Crew Socks</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?dress-socks" alt="Dress Socks">
+                <p>Dress Socks</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?no-show-socks" alt="No-show Socks">
+                <p>No-show Socks</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?compression-socks" alt="Compression Socks">
+                <p>Compression Socks</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?fleece-jacket" alt="Fleece Jacket">
+                <p>Fleece Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?running-shoes" alt="Running Shoes">
+                <p>Running Shoes</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?soccer-cleats" alt="Soccer Cleats">
+                <p>Soccer Cleats</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?cycling-shoes" alt="Cycling Shoes">
+                <p>Cycling Shoes</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hiking-boots" alt="Hiking Boots">
+                <p>Hiking Boots</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hiking-pants" alt="Hiking Pants">
+                <p>Hiking Pants</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hiking-shirt" alt="Hiking Shirt">
+                <p>Hiking Shirt</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?hiking-jacket" alt="Hiking Jacket">
+                <p>Hiking Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?down-jacket" alt="Down Jacket">
+                <p>Down Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?windbreaker-jacket" alt="Windbreaker Jacket">
+                <p>Windbreaker Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?thermal-underwear" alt="Thermal Underwear">
+                <p>Thermal Underwear</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?base-layer" alt="Base Layer">
+                <p>Base Layer</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?rash-guard" alt="Rash Guard">
+                <p>Rash Guard</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?wetsuit" alt="Wetsuit">
+                <p>Wetsuit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?dry-suit" alt="Dry Suit">
+                <p>Dry Suit</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?snow-pants" alt="Snow Pants">
+                <p>Snow Pants</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?snow-jacket" alt="Snow Jacket">
+                <p>Snow Jacket</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?thermal-socks" alt="Thermal Socks">
+                <p>Thermal Socks</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?bikini" alt="Bikini">
+                <p>Bikini</p>
+            </div>
+            <div class="product-box">
+                <img src="https://source.unsplash.com/random/200x200/?swim-trunks" alt="Swim Trunks">
+                <p>Swim Trunks</p>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="headingtext">Scalix</h2>
+                <p>Discover stylish and high-quality clothing at Scalix. Shop confidently with our fast shipping,
+                    easy returns, and dedicated customer support. Explore our trendy collections crafted from
+                    premium fabrics and stay connected for exclusive offers. Thank you for choosing us for your
+                    fashion needs.</p>
+                <div class="footer-icone-container">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook" style="color: white;"></i>
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+
+
+
+
+                </div>
+            </div>
+            <p>@ 2024 Scalix.com </p>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!--my js-->
+    <script src="cllection.js"></script>
+</body>
+
+</html>
